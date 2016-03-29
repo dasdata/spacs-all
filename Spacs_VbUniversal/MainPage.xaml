@@ -1,0 +1,31 @@
+﻿<Page
+    x:Class="Spacs_VbUniversal.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Spacs_VbUniversal"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Image x:Name="image" HorizontalAlignment="Left" Height="181" Margin="-37,-34,0,0" VerticalAlignment="Top" Width="535" Source="Assets/SplashScreen.png"/>
+
+        <TextBox x:Name="txtConsole"   HorizontalAlignment="Left" Margin="364,99,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="621" Height="356" FontSize="12" BorderThickness="1" BorderBrush="#FFCBCBCB"/>
+        <Button x:Name="btnDistancePedestrian"   Content="" HorizontalAlignment="Left" Margin="45,492,0,0" VerticalAlignment="Top" Width="300" FontSize="64" Height="120" Background="#33FFFFFF" Foreground="#FF191919" HorizontalContentAlignment="Left"/>
+        <TextBlock x:Name="TimerLog" HorizontalAlignment="Left" Margin="703,45,0,0" TextWrapping="Wrap" Text="TimerLog" VerticalAlignment="Top" Width="282" Height="53" Foreground="#FF878787"/>
+        <TextBlock x:Name="TimerStatus" HorizontalAlignment="Left" Margin="364,45,0,0" TextWrapping="Wrap" Text="Status" VerticalAlignment="Top" Width="334" Height="53" RenderTransformOrigin="0.5,0.5" Foreground="#FF878787"/>
+        <Button x:Name="btnCoord" Content="" HorizontalAlignment="Left" Margin="364,492,0,0" VerticalAlignment="Top" Width="424" FontSize="24" Height="120" Foreground="#FF212121" Background="#33FFFFFF" HorizontalContentAlignment="Left"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="45,476,0,0" TextWrapping="Wrap" Text="Pedestrian Distance (CM)" VerticalAlignment="Top" Foreground="#FF878787"/>
+        <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="364,476,0,0" TextWrapping="Wrap" Text="XYZ - Coordinates" VerticalAlignment="Top" Foreground="#FF878787"/>
+        <ToggleSwitch x:Name="tglCarStatus" Header="" HorizontalAlignment="Left" Margin="45,183,0,0" VerticalAlignment="Top" IsOn="True" FontSize="24" Width="238"/>
+        <TextBlock x:Name="txtCarStatus" HorizontalAlignment="Left" Margin="45,156,0,0" TextWrapping="Wrap" Text="Vehicle" VerticalAlignment="Top" Foreground="#FF878787"/>
+        <ToggleSwitch x:Name="tglAzureIot" Header="IoT Azure Hub" HorizontalAlignment="Right" Margin="0,521,56,0" VerticalAlignment="Top" IsOn="True" FontSize="18" Width="154"/>
+        <ToggleSwitch x:Name="tglSPACSStatus" Header="" HorizontalAlignment="Left" Margin="45,329,0,0" VerticalAlignment="Top" IsOn="True" FontSize="24" Width="238"/>
+        <TextBlock x:Name="txtSpacs" HorizontalAlignment="Left" Margin="45,304,0,0" TextWrapping="Wrap" Text="SPACS" VerticalAlignment="Top" Foreground="#FF878787"/>
+        <TextBox x:Name="txtCarAddress" HorizontalAlignment="Left" Margin="24,223,0,0" TextWrapping="Wrap" Text="192.168.0.107" VerticalAlignment="Top" Width="205" Height="49" FontSize="30" BorderThickness="0,0,0,1"/>
+        <TextBox x:Name="txtSPACSAddress" HorizontalAlignment="Left" Margin="24,374,0,0" TextWrapping="Wrap" Text="192.168.0.106" VerticalAlignment="Top" Width="205" Height="51" FontSize="30" BorderThickness="0,0,0,1"/>
+        <TextBox x:Name="txtSPACSPort" HorizontalAlignment="Left" Margin="234,374,0,0" TextWrapping="Wrap" Text="3030" VerticalAlignment="Top" Width="99" Height="51" FontSize="30" BorderThickness="0,0,0,1"/>
+        <TextBox x:Name="txtCar_Port" HorizontalAlignment="Left" Margin="233,221,0,0" TextWrapping="Wrap" Text="3030" VerticalAlignment="Top" Width="100" Height="51" FontSize="30" BorderThickness="0,0,0,1"/>
+
+    </Grid>
+</Page>
